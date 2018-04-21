@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fairygui">
+      <UniqueIdentifier>{18246fe5-bf9a-4082-b551-b873db63f5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\controller_action">
+      <UniqueIdentifier>{c7b23bab-4327-4adf-8d89-ff5e63d7f26e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\core">
+      <UniqueIdentifier>{7f96435f-442c-465d-bcbd-ec9aa5dda144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\event">
+      <UniqueIdentifier>{08d54715-4b3e-4eb8-9240-815037534197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\gears">
+      <UniqueIdentifier>{9b2b3e5f-8192-4d38-8502-58beb24b327a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\third_party">
+      <UniqueIdentifier>{8c703f21-2dae-4847-8b8b-8c5956e5aace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\treeview">
+      <UniqueIdentifier>{6324e45c-bfa0-4044-be2c-cafe77eb3a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\utils">
+      <UniqueIdentifier>{d4038720-86a3-4fb7-ba76-830b9832250b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\third_party\cc">
+      <UniqueIdentifier>{d2a39e20-8de7-4765-822f-7090c8ef6451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fairygui\third_party\tinyxml2">
+      <UniqueIdentifier>{ba73416c-93a6-419d-a428-754305f3d747}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myComponent.h">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="FairyGUIEnginePluginModule.h">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="PluginMain.cpp">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="FairyGUIEnginePluginPCH.cpp">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="FairyGUIEnginePluginPCH.h">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="myComponent.cpp">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="TemplateAction.h">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="TemplateAction.cpp">
+      <Filter>
+      </Filter>
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="fairygui\Relations.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\ScrollPane.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\Transition.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\UIConfig.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\UIObjectFactory.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\UIPackage.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\Window.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\DragDropManager.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\FairyGUI.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\FGUIMacros.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\FGUIManager.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\FieldTypes.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GButton.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GComboBox.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GComponent.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GController.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GGraph.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GGroup.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GImage.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GLabel.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GList.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GLoader.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GMovieClip.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GObject.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GObjectPool.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GProgressBar.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GRichTextField.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GRoot.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GScrollBar.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GSlider.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GTextField.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\GTextInput.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\Margin.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\PackageItem.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\PopupMenu.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\RelationItem.h">
+      <Filter>fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\controller_action\ControllerAction.h">
+      <Filter>fairygui\controller_action</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\controller_action\PlayTransitionAction.h">
+      <Filter>fairygui\controller_action</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\controller_action\ChangePageAction.h">
+      <Filter>fairygui\controller_action</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\HitTest.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\HtmlHelper.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\Image.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\IMEAdapter.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\InputTextField.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\MovieClip.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\NGraphics.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\Node.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\NTexture.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\RenderContext.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\RichTextField.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\SelectionShape.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\Shape.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\Stage.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\TextField.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\TextFormat.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\DisplayObject.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\event\EventDispatcher.h">
+      <Filter>fairygui\event</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\event\InputEvent.h">
+      <Filter>fairygui\event</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\event\UIEventType.h">
+      <Filter>fairygui\event</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\event\EventContext.h">
+      <Filter>fairygui\event</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearBase.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearColor.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearDisplay.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearIcon.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearLook.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearSize.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearText.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearXY.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\gears\GearAnimation.h">
+      <Filter>fairygui\gears</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\treeview\TreeNode.h">
+      <Filter>fairygui\treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\treeview\TreeView.h">
+      <Filter>fairygui\treeview</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\utils\ToolSet.h">
+      <Filter>fairygui\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\utils\UBBParser.h">
+      <Filter>fairygui\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\utils\ActionUtils.h">
+      <Filter>fairygui\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\utils\ByteArray.h">
+      <Filter>fairygui\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCActionEase.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCActionInstant.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCActionInterval.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCActionManager.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\ccCArray.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCScheduler.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCTweenFunction.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCValue.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\uthash.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\utlist.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCAction.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\tinyxml2\tinyxml2.h">
+      <Filter>fairygui\third_party\tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\ccMacros.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCPlatformMacros.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCActionCustom.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\BitmapFont.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\NativeFont.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\core\BaseFont.h">
+      <Filter>fairygui\core</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCAutoreleasePool.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCRef.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCRefPtr.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\ccConfig.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\ccRandom.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCPlatformConfig.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCVector.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+    <ClInclude Include="fairygui\third_party\cc\CCMap.h">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fairygui\Relations.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\ScrollPane.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\Transition.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\UIConfig.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\UIObjectFactory.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\UIPackage.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\Window.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\DragDropManager.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\FGUIManager.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GButton.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GComboBox.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GComponent.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GController.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GGraph.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GGroup.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GImage.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GLabel.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GList.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GLoader.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GMovieClip.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GObject.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GObjectPool.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GProgressBar.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GRichTextField.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GRoot.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GScrollBar.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GSlider.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GTextField.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\GTextInput.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\Margin.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\PackageItem.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\PopupMenu.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\RelationItem.cpp">
+      <Filter>fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\controller_action\ControllerAction.cpp">
+      <Filter>fairygui\controller_action</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\controller_action\PlayTransitionAction.cpp">
+      <Filter>fairygui\controller_action</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\controller_action\ChangePageAction.cpp">
+      <Filter>fairygui\controller_action</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\HtmlHelper.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\Image.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\InputTextField.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\MovieClip.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\NGraphics.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\Node.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\NTexture.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\RenderContext.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\RichTextField.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\SelectionShape.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\Shape.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\Stage.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\TextField.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\TextFormat.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\DisplayObject.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\HitTest.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\event\InputEvent.cpp">
+      <Filter>fairygui\event</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\event\EventContext.cpp">
+      <Filter>fairygui\event</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\event\EventDispatcher.cpp">
+      <Filter>fairygui\event</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearColor.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearDisplay.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearIcon.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearLook.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearSize.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearText.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearXY.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearAnimation.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\gears\GearBase.cpp">
+      <Filter>fairygui\gears</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\treeview\TreeView.cpp">
+      <Filter>fairygui\treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\treeview\TreeNode.cpp">
+      <Filter>fairygui\treeview</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\utils\ToolSet.cpp">
+      <Filter>fairygui\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\utils\UBBParser.cpp">
+      <Filter>fairygui\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\utils\ActionUitls.cpp">
+      <Filter>fairygui\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\utils\ByteArray.cpp">
+      <Filter>fairygui\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCActionInstant.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCActionInterval.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCActionManager.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\ccCArray.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCScheduler.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCTweenFunction.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCValue.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCAction.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCActionEase.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\tinyxml2\tinyxml2.cpp">
+      <Filter>fairygui\third_party\tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCActionCustom.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\NativeFont.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\core\BitmapFont.cpp">
+      <Filter>fairygui\core</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCAutoreleasePool.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+    <ClCompile Include="fairygui\third_party\cc\CCRef.cpp">
+      <Filter>fairygui\third_party\cc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

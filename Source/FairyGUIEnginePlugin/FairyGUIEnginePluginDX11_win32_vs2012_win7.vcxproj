@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX11"
+    SOLUTION_FOLDER = ""
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION"
+  -->
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|win32">
+      <Configuration>Dev</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Hybrid|win32">
+      <Configuration>Hybrid</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D34D41E-07ED-47CC-945E-DB5F88F16397}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>DynamicLibrary</Keyword>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>FairyGUIEnginePluginDX11</ProjectName>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX11_win32_vs2012_win7Debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX11_win32_vs2012_win7Dev.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX11_win32_vs2012_win7Hybrid.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePluginDX11_win32_vs2012_win7Release.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <PropertyGroup>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.vPluginD</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">.vPlugin</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">.vPlugin</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.vPlugin</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">../../Obj/win32_vs2012_win7/Debug/FairyGUIEnginePluginDX11\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">../../Bin/win32_vs2012_win7/Debug/DX11\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">FairyGUIEnginePlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">../../Obj/win32_vs2012_win7/Dev/FairyGUIEnginePluginDX11\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">../../Bin/win32_vs2012_win7/Dev/DX11\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">FairyGUIEnginePlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">../../Obj/win32_vs2012_win7/Hybrid/FairyGUIEnginePluginDX11\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">../../Bin/win32_vs2012_win7/Hybrid/DX11\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">FairyGUIEnginePlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">../../Obj/win32_vs2012_win7/Release/FairyGUIEnginePluginDX11\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">../../Bin/win32_vs2012_win7/Release/DX11\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">FairyGUIEnginePlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Link>
+      <AdditionalDependencies>lua110D.lib;BaseDX11D.lib;VisionDX11D.lib;vFmodEnginePluginDX11D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(VISION_SDK)/Source;..\..\..\Source;..\..\..\Source;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.46/inc;fairygui</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">
+    <Link>
+      <AdditionalDependencies>lua110.lib;BaseDX11.lib;VisionDX11.lib;vFmodEnginePluginDX11D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(VISION_SDK)/Source;..\..\..\Source;..\..\..\Source;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.46/inc;fairygui</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">
+    <Link>
+      <AdditionalDependencies>lua110.lib;BaseDX11.lib;VisionDX11.lib;vFmodEnginePluginDX11D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(VISION_SDK)/Source;..\..\..\Source;..\..\..\Source;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.46/inc;fairygui</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Link>
+      <AdditionalDependencies>lua110.lib;BaseDX11.lib;VisionDX11.lib;vFmodEnginePluginDX11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(VISION_SDK)/Source;..\..\..\Source;..\..\..\Source;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.46/inc;fairygui</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="fairygui\controller_action\ChangePageAction.cpp" />
+    <ClCompile Include="fairygui\controller_action\ControllerAction.cpp" />
+    <ClCompile Include="fairygui\controller_action\PlayTransitionAction.cpp" />
+    <ClCompile Include="fairygui\core\BitmapFont.cpp" />
+    <ClCompile Include="fairygui\core\DisplayObject.cpp" />
+    <ClCompile Include="fairygui\core\HitTest.cpp" />
+    <ClCompile Include="fairygui\core\HtmlHelper.cpp" />
+    <ClCompile Include="fairygui\core\Image.cpp" />
+    <ClCompile Include="fairygui\core\InputTextField.cpp" />
+    <ClCompile Include="fairygui\core\MovieClip.cpp" />
+    <ClCompile Include="fairygui\core\NativeFont.cpp" />
+    <ClCompile Include="fairygui\core\NGraphics.cpp" />
+    <ClCompile Include="fairygui\core\Node.cpp" />
+    <ClCompile Include="fairygui\core\NTexture.cpp" />
+    <ClCompile Include="fairygui\core\RenderContext.cpp" />
+    <ClCompile Include="fairygui\core\RichTextField.cpp" />
+    <ClCompile Include="fairygui\core\SelectionShape.cpp" />
+    <ClCompile Include="fairygui\core\Shape.cpp" />
+    <ClCompile Include="fairygui\core\Stage.cpp" />
+    <ClCompile Include="fairygui\core\TextField.cpp" />
+    <ClCompile Include="fairygui\core\TextFormat.cpp" />
+    <ClCompile Include="fairygui\DragDropManager.cpp" />
+    <ClCompile Include="fairygui\event\EventContext.cpp" />
+    <ClCompile Include="fairygui\event\EventDispatcher.cpp" />
+    <ClCompile Include="fairygui\event\InputEvent.cpp" />
+    <ClCompile Include="fairygui\FGUIManager.cpp" />
+    <ClCompile Include="fairygui\GButton.cpp" />
+    <ClCompile Include="fairygui\GComboBox.cpp" />
+    <ClCompile Include="fairygui\GComponent.cpp" />
+    <ClCompile Include="fairygui\GController.cpp" />
+    <ClCompile Include="fairygui\gears\GearAnimation.cpp" />
+    <ClCompile Include="fairygui\gears\GearBase.cpp" />
+    <ClCompile Include="fairygui\gears\GearColor.cpp" />
+    <ClCompile Include="fairygui\gears\GearDisplay.cpp" />
+    <ClCompile Include="fairygui\gears\GearIcon.cpp" />
+    <ClCompile Include="fairygui\gears\GearLook.cpp" />
+    <ClCompile Include="fairygui\gears\GearSize.cpp" />
+    <ClCompile Include="fairygui\gears\GearText.cpp" />
+    <ClCompile Include="fairygui\gears\GearXY.cpp" />
+    <ClCompile Include="fairygui\GGraph.cpp" />
+    <ClCompile Include="fairygui\GGroup.cpp" />
+    <ClCompile Include="fairygui\GImage.cpp" />
+    <ClCompile Include="fairygui\GLabel.cpp" />
+    <ClCompile Include="fairygui\GList.cpp" />
+    <ClCompile Include="fairygui\GLoader.cpp" />
+    <ClCompile Include="fairygui\GMovieClip.cpp" />
+    <ClCompile Include="fairygui\GObject.cpp" />
+    <ClCompile Include="fairygui\GObjectPool.cpp" />
+    <ClCompile Include="fairygui\GProgressBar.cpp" />
+    <ClCompile Include="fairygui\GRichTextField.cpp" />
+    <ClCompile Include="fairygui\GRoot.cpp" />
+    <ClCompile Include="fairygui\GScrollBar.cpp" />
+    <ClCompile Include="fairygui\GSlider.cpp" />
+    <ClCompile Include="fairygui\GTextField.cpp" />
+    <ClCompile Include="fairygui\GTextInput.cpp" />
+    <ClCompile Include="fairygui\Margin.cpp" />
+    <ClCompile Include="fairygui\PackageItem.cpp" />
+    <ClCompile Include="fairygui\PopupMenu.cpp" />
+    <ClCompile Include="fairygui\RelationItem.cpp" />
+    <ClCompile Include="fairygui\Relations.cpp" />
+    <ClCompile Include="fairygui\ScrollPane.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCAction.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCActionEase.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCActionInstant.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCActionInterval.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCActionCustom.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCActionManager.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCAutoreleasePool.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\ccCArray.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCRef.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCScheduler.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCTweenFunction.cpp" />
+    <ClCompile Include="fairygui\third_party\cc\CCValue.cpp" />
+    <ClCompile Include="fairygui\third_party\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="fairygui\Transition.cpp" />
+    <ClCompile Include="fairygui\treeview\TreeNode.cpp" />
+    <ClCompile Include="fairygui\treeview\TreeView.cpp" />
+    <ClCompile Include="fairygui\UIConfig.cpp" />
+    <ClCompile Include="fairygui\UIObjectFactory.cpp" />
+    <ClCompile Include="fairygui\UIPackage.cpp" />
+    <ClCompile Include="fairygui\utils\ActionUitls.cpp" />
+    <ClCompile Include="fairygui\utils\ByteArray.cpp" />
+    <ClCompile Include="fairygui\utils\ToolSet.cpp" />
+    <ClCompile Include="fairygui\utils\UBBParser.cpp" />
+    <ClCompile Include="fairygui\Window.cpp" />
+    <ClCompile Include="TemplateAction.cpp">
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="fairygui\controller_action\ChangePageAction.h" />
+    <ClInclude Include="fairygui\controller_action\ControllerAction.h" />
+    <ClInclude Include="fairygui\controller_action\PlayTransitionAction.h" />
+    <ClInclude Include="fairygui\core\BaseFont.h" />
+    <ClInclude Include="fairygui\core\BitmapFont.h" />
+    <ClInclude Include="fairygui\core\DisplayObject.h" />
+    <ClInclude Include="fairygui\core\HitTest.h" />
+    <ClInclude Include="fairygui\core\HtmlHelper.h" />
+    <ClInclude Include="fairygui\core\Image.h" />
+    <ClInclude Include="fairygui\core\IMEAdapter.h" />
+    <ClInclude Include="fairygui\core\InputTextField.h" />
+    <ClInclude Include="fairygui\core\MovieClip.h" />
+    <ClInclude Include="fairygui\core\NativeFont.h" />
+    <ClInclude Include="fairygui\core\NGraphics.h" />
+    <ClInclude Include="fairygui\core\Node.h" />
+    <ClInclude Include="fairygui\core\NTexture.h" />
+    <ClInclude Include="fairygui\core\RenderContext.h" />
+    <ClInclude Include="fairygui\core\RichTextField.h" />
+    <ClInclude Include="fairygui\core\SelectionShape.h" />
+    <ClInclude Include="fairygui\core\Shape.h" />
+    <ClInclude Include="fairygui\core\Stage.h" />
+    <ClInclude Include="fairygui\core\TextField.h" />
+    <ClInclude Include="fairygui\core\TextFormat.h" />
+    <ClInclude Include="fairygui\DragDropManager.h" />
+    <ClInclude Include="fairygui\event\EventContext.h" />
+    <ClInclude Include="fairygui\event\EventDispatcher.h" />
+    <ClInclude Include="fairygui\event\InputEvent.h" />
+    <ClInclude Include="fairygui\event\UIEventType.h" />
+    <ClInclude Include="fairygui\FairyGUI.h" />
+    <ClInclude Include="fairygui\FGUIMacros.h" />
+    <ClInclude Include="fairygui\FGUIManager.h" />
+    <ClInclude Include="fairygui\FieldTypes.h" />
+    <ClInclude Include="fairygui\GButton.h" />
+    <ClInclude Include="fairygui\GComboBox.h" />
+    <ClInclude Include="fairygui\GComponent.h" />
+    <ClInclude Include="fairygui\GController.h" />
+    <ClInclude Include="fairygui\gears\GearAnimation.h" />
+    <ClInclude Include="fairygui\gears\GearBase.h" />
+    <ClInclude Include="fairygui\gears\GearColor.h" />
+    <ClInclude Include="fairygui\gears\GearDisplay.h" />
+    <ClInclude Include="fairygui\gears\GearIcon.h" />
+    <ClInclude Include="fairygui\gears\GearLook.h" />
+    <ClInclude Include="fairygui\gears\GearSize.h" />
+    <ClInclude Include="fairygui\gears\GearText.h" />
+    <ClInclude Include="fairygui\gears\GearXY.h" />
+    <ClInclude Include="fairygui\GGraph.h" />
+    <ClInclude Include="fairygui\GGroup.h" />
+    <ClInclude Include="fairygui\GImage.h" />
+    <ClInclude Include="fairygui\GLabel.h" />
+    <ClInclude Include="fairygui\GList.h" />
+    <ClInclude Include="fairygui\GLoader.h" />
+    <ClInclude Include="fairygui\GMovieClip.h" />
+    <ClInclude Include="fairygui\GObject.h" />
+    <ClInclude Include="fairygui\GObjectPool.h" />
+    <ClInclude Include="fairygui\GProgressBar.h" />
+    <ClInclude Include="fairygui\GRichTextField.h" />
+    <ClInclude Include="fairygui\GRoot.h" />
+    <ClInclude Include="fairygui\GScrollBar.h" />
+    <ClInclude Include="fairygui\GSlider.h" />
+    <ClInclude Include="fairygui\GTextField.h" />
+    <ClInclude Include="fairygui\GTextInput.h" />
+    <ClInclude Include="fairygui\Margin.h" />
+    <ClInclude Include="fairygui\PackageItem.h" />
+    <ClInclude Include="fairygui\PopupMenu.h" />
+    <ClInclude Include="fairygui\RelationItem.h" />
+    <ClInclude Include="fairygui\Relations.h" />
+    <ClInclude Include="fairygui\ScrollPane.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCAction.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCActionEase.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCActionInstant.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCActionInterval.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCActionCustom.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCActionManager.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCAutoreleasePool.h" />
+    <ClInclude Include="fairygui\third_party\cc\ccCArray.h" />
+    <ClInclude Include="fairygui\third_party\cc\ccConfig.h" />
+    <ClInclude Include="fairygui\third_party\cc\ccMacros.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCMap.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCPlatformConfig.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCPlatformMacros.h" />
+    <ClInclude Include="fairygui\third_party\cc\ccRandom.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCRef.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCRefPtr.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCScheduler.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCTweenFunction.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCValue.h" />
+    <ClInclude Include="fairygui\third_party\cc\CCVector.h" />
+    <ClInclude Include="fairygui\third_party\cc\uthash.h" />
+    <ClInclude Include="fairygui\third_party\cc\utlist.h" />
+    <ClInclude Include="fairygui\third_party\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="fairygui\Transition.h" />
+    <ClInclude Include="fairygui\treeview\TreeNode.h" />
+    <ClInclude Include="fairygui\treeview\TreeView.h" />
+    <ClInclude Include="fairygui\UIConfig.h" />
+    <ClInclude Include="fairygui\UIObjectFactory.h" />
+    <ClInclude Include="fairygui\UIPackage.h" />
+    <ClInclude Include="fairygui\utils\ActionUtils.h" />
+    <ClInclude Include="fairygui\utils\ByteArray.h" />
+    <ClInclude Include="fairygui\utils\ToolSet.h" />
+    <ClInclude Include="fairygui\utils\UBBParser.h" />
+    <ClInclude Include="fairygui\Window.h" />
+    <ClInclude Include="TemplateAction.h">
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="myComponent.h">
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="FairyGUIEnginePluginPCH.cpp">
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="FairyGUIEnginePluginPCH.h">
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="PluginMain.cpp">
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+    <ClInclude Include="FairyGUIEnginePluginModule.h">
+      <DeploymentContent>False</DeploymentContent>
+    </ClInclude>
+    <ClCompile Include="myComponent.cpp">
+      <DeploymentContent>False</DeploymentContent>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn>FairyGUIEnginePluginDX11_CleanReflections;$(CleanDependsOn)</CleanDependsOn>
+  </PropertyGroup>
+  <Target Name="FairyGUIEnginePluginDX11_CleanReflections">
+    <Delete Files="$(MSBuildProjectDirectory)\reflections.db" />
+  </Target>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Hybrid|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+</Project>

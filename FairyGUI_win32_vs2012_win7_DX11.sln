@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FairyGUIEnginePluginDX11", "Source\FairyGUIEnginePlugin\FairyGUIEnginePluginDX11_win32_vs2012_win7.vcxproj", "{0D34D41E-07ED-47CC-945E-DB5F88F16397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|win32 = Debug|win32
+		Dev|win32 = Dev|win32
+		Hybrid|win32 = Hybrid|win32
+		Release|win32 = Release|win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Debug|win32.ActiveCfg = Debug|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Debug|win32.Build.0 = Debug|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Dev|win32.ActiveCfg = Dev|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Dev|win32.Build.0 = Dev|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Hybrid|win32.ActiveCfg = Hybrid|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Hybrid|win32.Build.0 = Hybrid|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Release|win32.ActiveCfg = Release|win32
+		{0D34D41E-07ED-47CC-945E-DB5F88F16397}.Release|win32.Build.0 = Release|win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
