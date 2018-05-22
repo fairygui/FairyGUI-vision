@@ -69,7 +69,7 @@ void GProgressBar::tweenValue(double value, float duration)
 
 void GProgressBar::update(double newValue)
 {
-    float percent = MIN((float)(newValue / _max), 1.0f);
+    float percent = _max != 0 ? MIN((float)(newValue / _max), 1.0f) : 0;
 
     if (_titleObject != nullptr)
     {

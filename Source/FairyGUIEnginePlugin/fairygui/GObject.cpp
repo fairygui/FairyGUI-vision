@@ -127,6 +127,33 @@ void GObject::setPosition(float xv, float yv)
     }
 }
 
+
+float GObject::getXMin() const
+{
+    return _pivotAsAnchor ? (_position.x - _size.x * _pivot.x) : _position.x;
+}
+
+void GObject::setXMin(float value)
+{
+    if (_pivotAsAnchor)
+        setPosition(value + _size.x * _pivot.x, _position.y);
+    else
+        setPosition(value, _position.y);
+}
+
+float GObject::getYMin() const
+{
+    return _pivotAsAnchor ? (_position.y - _size.y * _pivot.y) : _position.y;
+}
+
+void GObject::setYMin(float value)
+{
+    if (_pivotAsAnchor)
+        setPosition(_position.x, value + _size.y * _pivot.y);
+    else
+        setPosition(_position.x, value);
+}
+
 void GObject::setPixelSnapping(bool value)
 {
     if (_pixelSnapping != value)
@@ -180,7 +207,7 @@ void GObject::setSize(float wv, float hv, bool ignorePivot /*= false*/)
 
         if (_parent != nullptr)
         {
-            _relations->onOwnerSizeChanged(dWidth, dHeight);
+            _relations->onOwnerSizeChanged(dWidth, dHeight, _pivotAsAnchor || !ignorePivot);
             _parent->setBoundsChangedFlag();
             if (_group != nullptr)
                 _group->setBoundsChangedFlag(true);

@@ -27,8 +27,12 @@ public:
     void setY(float value);
     const hkvVec2& getPosition()const { return _position; }
     void setPosition(float xv, float yv);
+    float getXMin() const;
+    void setXMin(float value);
+    float getYMin() const;
+    void setYMin(float value);
 
-    bool getPixelSnapping() const { return _pixelSnapping; }
+    bool isPixelSnapping() const { return _pixelSnapping; }
     void setPixelSnapping(bool value);
 
     float getWidth() const { return _size.x; }
@@ -43,6 +47,7 @@ public:
 
     const hkvVec2& getPivot() const { return _pivot; }
     void setPivot(float xv, float yv, bool asAnchor = false);
+    bool isPivotAsAnchor() const { return _pivotAsAnchor; }
 
     float getScaleX() const { return _scale.x; }
     void setScaleX(float value) { setScale(value, _scale.y); }

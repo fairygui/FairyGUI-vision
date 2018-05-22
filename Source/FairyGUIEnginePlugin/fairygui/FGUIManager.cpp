@@ -57,7 +57,7 @@ void FGUIManager::OneTimeInit()
     Vision::Callbacks.OnRenderHook += this;
     Vision::Callbacks.OnVideoChanged += this;
     Vision::Callbacks.OnEngineDeInit += this;
-    IVScriptManager::OnRegisterScriptFunctions += this;
+	IVScriptManager::OnRegisterScriptFunctions += this;
 }
 
 void FGUIManager::OneTimeDeInit()
@@ -74,7 +74,7 @@ void FGUIManager::OneTimeDeInit()
     Vision::Callbacks.OnRenderHook -= this;
     Vision::Callbacks.OnVideoChanged -= this;
     Vision::Callbacks.OnEngineDeInit -= this;
-    IVScriptManager::OnRegisterScriptFunctions -= this;
+	IVScriptManager::OnRegisterScriptFunctions -= this;
 }
 
 void FGUIManager::cleanupResources()
@@ -256,42 +256,41 @@ void FGUIManager::OnHandleCallback(IVisCallbackDataObject_cl * pData)
         setPlayTheGame(false);
         return;
     }
-    else if (pData->m_pSender == &IVScriptManager::OnRegisterScriptFunctions)
-    {
-        /*(IVScriptManager* pSM = Vision::GetScriptManager();
-        if(pSM)
-        {
-            lua_State* pLuaState = ((VScriptResourceManager*)pSM)->GetMasterState();
-            if(pLuaState)
-            {
-                //luaopen_TestClassModule(pLuaState);
-                lua_getglobal(pLuaState, "FGUI");
-                int iType = lua_type(pLuaState, -1);
-                lua_pop(pLuaState, 1);
+	else if(pData->m_pSender==&IVScriptManager::OnRegisterScriptFunctions)
+	{
+        /*IVScriptManager* pSM = Vision::GetScriptManager();
+		if(pSM)
+		{
+			lua_State* pLuaState = ((VScriptResourceManager*)pSM)->GetMasterState();
+			if(pLuaState) 
+			{
+				//luaopen_TestClassModule(pLuaState);
+				lua_getglobal(pLuaState, "FGUI");
+				int iType = lua_type(pLuaState, -1);
+				lua_pop(pLuaState, 1);
 
-                if(iType!=LUA_TUSERDATA)
-                {
-                    luaopen_FairyGUIModule(pLuaState);
-                    int iRetParams = LUA_CallStaticFunction(pLuaState,"FairyGUIModule","FGUIManager","Cast","v>v", &FGUIManager::GlobalManager());
-                    if (iRetParams==1)
-                    {
-                        if(lua_isnil(pLuaState, -1))
-                        {
-                            lua_pop(pLuaState, iRetParams);
-                        }
-                        else
-                        {
-                            lua_setglobal(pLuaState, "FGUI");
-                            return;
-                        }
-                    }
-                }
-            }
-            else
-                hkvLog::Error("Unable to create Lua Racer Module, lua_State is NULL!");
-        }*/
-        return;
-    }
+				if(iType!=LUA_TUSERDATA)
+				{
+					luaopen_FairyGUIModule(pLuaState);
+					int iRetParams = LUA_CallStaticFunction(pLuaState,"FairyGUIModule","FGUIManager","Cast","v>v", &FGUIManager::GlobalManager());
+					if (iRetParams==1)
+					{
+						if(lua_isnil(pLuaState, -1))
+						{
+							lua_pop(pLuaState, iRetParams);
+						}
+						else
+						{
+							lua_setglobal(pLuaState, "FGUI");
+							return;
+						}
+					}
+				}
+			}
+			else hkvLog::Error("Unable to create Lua Racer Module, lua_State is NULL!");
+		}*/
+		return;
+	}
 }
 
 NS_FGUI_END
