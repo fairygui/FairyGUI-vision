@@ -2,8 +2,6 @@
 #include "GRoot.h"
 #include "utils/ToolSet.h"
 
-#define TRIAL_VERISON 1
-
 NS_FGUI_BEGIN
 
 RenderContext::RenderContext()
@@ -24,10 +22,6 @@ void RenderContext::begin()
 
 void RenderContext::end()
 {
-#ifdef TRIAL_VERISON
-    Vision::Fonts.DebugFont().PrintText(_renderer, hkvVec2(2, 2), "FairyGUI Trial Version", V_RGBA_WHITE, _renderState);
-#endif
-
     Vision::RenderLoopHelper.EndOverlayRendering();
 }
 
